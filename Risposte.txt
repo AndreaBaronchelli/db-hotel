@@ -42,5 +42,5 @@ WHERE `ospite_id` <> “”;
 
 
 Quanti posti letto ha l’hotel in totale? 
-SELECT COUNT(`id`) AS "rooms_number"
+SELECT SUM(`beds`) AS "beds_number"
 FROM `stanze`;
